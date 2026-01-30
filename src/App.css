@@ -20,3 +20,85 @@ section{
     z-index: 2;
 }
 
+#section-1{
+
+    --gap:3rem;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 0.7rem;
+        padding: 3.5rem;
+
+
+        .nav-elem:nth-child(2){
+            i{
+                color: red;
+            }
+        }
+        
+        svg{
+            max-width: 7rem;
+            width: 100%;
+            min-height: 100%;
+        }
+    }
+
+    .middle{
+        display: flex;
+        gap: var(--gap);
+
+        .left,
+        .right{
+            width: 50%;
+        }
+
+        .left{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-block: 7rem;
+        }
+        h1{
+            font-size: 8rem;
+            line-height: 0.8;
+            text-align: right;
+        }
+    }
+
+    .bottom{
+        display: flex;
+        gap: var(--gap);
+
+      .left,
+      .right{
+        width: 50%;
+      }  
+
+      .right{
+        p{
+            font-weight: 300;
+            line-height: 1.5;
+        }
+      }
+    }
+
+    .first-line{
+        width: 40rem;
+        background-color: rgba(255,0,0,0.396);
+        height: 1px;
+        position: absolute; 
+        transform: rotate(45deg) translate(0,-17rem);
+    }
+    .second-line{
+        width: 10rem;
+        background-color: rgba(255,0,0,0.396);
+        height: 1px;
+        position: absolute; 
+        transform: rotate(135deg);
+        top:28%;
+        right:12%;
+    }
+}
+
