@@ -6,7 +6,17 @@ const App = () => {
   return (
     <>
       <main>
+        <div className="images">
+          <img id="tomorrowland" src="/tommorowland.png" alt="" />
+          <img id="navy" src="/navy-pier.png" alt="" />
+          <img id="msi" src="/msi-chicago.png" alt="" />
+          <img id="phone" src="/phone.png" alt="" />
+          <img id="kikk" src="/kikk.png" alt="" />
+          <img id="kennedy" src="/kennedy.png" alt="" />
+          <img id="opera" src="/opera.png" alt="" />
+        </div>
         <Canvas
+          id="canvas-elem"
           style={{
             height: "100vh",
             width: "100vw",
@@ -14,9 +24,6 @@ const App = () => {
             top: 0,
             left: 0,
             zIndex: 1,
-            backgroundImage: "url(/background-l.png)",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
           }}
         >
           <Dog />
@@ -77,8 +84,79 @@ const App = () => {
           <div className="first-line"></div>
           <div className="second-line"></div>
         </section>
-        <section id="section-2"></section>
-        <section id="section-3"></section>
+        <section id="section-2">
+          <div className="titles">
+            <div img-title="tomorrowland" className="title">
+              <small>2020 - ONGOING</small>
+              <h1>Tomorrowland</h1>
+            </div>
+            <div img-title="navy" className="title">
+              <small>2020 - ONGOING</small>
+              <h1>Navy Pier</h1>
+            </div>
+            <div img-title="msi" className="title">
+              <small>2020 - ONGOING</small>
+              <h1>MSI Chicage</h1>
+            </div>
+            <div img-title="phone" className="title">
+              <small>2020 - ONGOING</small>
+              <h1>This Was Louise's Phone</h1>
+            </div>
+            <div img-title="kikk" className="title">
+              <small>2020 - ONGOING</small>
+              <h1>KIKK Festival 2018</h1>
+            </div>
+            <div img-title="kennedy" className="title">
+              <small>2020 - ONGOING</small>
+              <h1>The Kennedy center</h1>
+            </div>
+            <div img-title="opera" className="title">
+              <small>2020 - ONGOING</small>
+              <h1>Royal Opera Of Wallonia</h1>
+            </div>
+          </div>
+        </section>
+        <section id="section-3">
+          <div className="top">
+            <div className="left">
+              <h3>
+                Lorem ipsum dolor <br />
+                sit amet consectetur <br />
+                adipisicing elit.
+                <br />
+                Dignissimos, <br />
+                debitis sequi?
+              </h3>
+            </div>
+            <div className="right"></div>
+          </div>
+        </section>
+        <section id="section-4">
+          <div className="bottom">
+            <div className="left"></div>
+            <div className="right">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+                quia fugit nulla dignissimos, optio perferendis ipsam molestiae
+                fugiat delectus atque libero unde minima obcaecati impedit,
+                distinctio dolore a perspiciatis adipisci totam laborum, nisi
+                soluta. Repellat, dignissimos alias sapiente deserunt nam, nisi
+                asperiores modi blanditiis consectetur itaque, porro officia
+                deleniti hic.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Deleniti earum architecto, porro ipsa doloremque, voluptas atque
+                voluptatem, impedit nihil doloribus distinctio! Eveniet,
+                dolorem. Nesciunt nulla perspiciatis laboriosam veritatis eum
+                illo sint porro est esse? Voluptatibus, consequatur? Possimus
+                placeat non laudantium fugiat quo, cumque voluptas unde maiores
+                perspiciatis obcaecati repellendus rerum!
+              </p>
+            </div>
+          </div>
+          <div className="gradient-footer"></div>
+        </section>
       </main>
     </>
   );
